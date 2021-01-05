@@ -82,15 +82,96 @@
 
         <div class="about-me__body">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus fugiat eos praesentium cumque
-                laudantium! Molestiae, ab rerum non tenetur praesentium molestias quae harum alias distinctio iusto
-                saepe et minima?
+                I'm Jerick Baetiong. Full stack developer with 2+ years of hands-on experience in designing, developing
+                implementing, and deploying websites and web applications using a range of latest web technologies.
+                Seeking to leverage broad development experience and hands-on techinical expertise in a challenging role
+                as a Full-stack Developer.
             </p>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quae vel qui aspernatur hic laborum,
                 fuga incidunt non debitis praesentium atque? Earum commodi fugit, facere nulla doloremque nihil a odit.
             </p>
         </div> <!-- / About-->
+    </section>
+
+
+    <section class="web-technologies" id="tech">
+        <h2 class="section__title">Web Technologies</h2>
+
+        <div class="technologies">
+            <div class="technology tooltip">
+                <span class="tooltiptext">
+                    HTML5
+                </span>
+                <img src="{{asset('images/html5.png')}}" alt="webtech">
+            </div>
+            <div class="technology tooltip">
+                <span class="tooltiptext">
+                    CSS3
+                </span>
+                <img src="{{asset('images/css3.png')}}" alt="webtech">
+            </div>
+            <div class="technology tooltip">
+                <span class="tooltiptext">
+                    Javascript
+                </span>
+                <img src="{{asset('images/javascript.png')}}" alt="webtech">
+            </div>
+            <div class="technology tooltip">
+                <span class="tooltiptext">
+                    Bootstrap
+                </span>
+                <img src="{{asset('images/bootstrap.png')}}" alt="webtech">
+            </div>
+            <div class="technology tooltip">
+                <span class="tooltiptext">
+                    Laravel
+                </span>
+                <img src="{{asset('images/laravel.png')}}" alt="webtech">
+            </div>
+            <div class="technology tooltip">
+                <span class="tooltiptext">
+                    JQuery
+                </span>
+                <img src="{{asset('images/jquery.png')}}" alt="webtech">
+            </div>
+            <div class="technology tooltip">
+                <span class="tooltiptext">
+                    Vue JS
+                </span>
+                <img src="{{asset('images/vue.png')}}" alt="webtech">
+            </div>
+            <div class="technology tooltip">
+                <span class="tooltiptext">
+                    Vuetify
+                </span>
+                <img src="{{asset('images/vuetify.png')}}" alt="webtech">
+            </div>
+            <div class="technology tooltip">
+                <span class="tooltiptext">
+                    Git
+                </span>
+                <img src="{{asset('images/git.png')}}" alt="webtech">
+            </div>
+            <div class="technology tooltip">
+                <span class="tooltiptext">
+                    Github
+                </span>
+                <img src="{{asset('images/github.png')}}" alt="webtech">
+            </div>
+            <div class="technology tooltip">
+                <span class="tooltiptext">
+                    Gitlab
+                </span>
+                <img src="{{asset('images/gitlab.png')}}" alt="webtech">
+            </div>
+            <div class="technology tooltip">
+                <span class="tooltiptext">
+                    Node JS
+                </span>
+                <img src="{{asset('images/node.png')}}" alt="webtech">
+            </div>
+        </div>
     </section>
 
     <section class="my-work" id="work">
