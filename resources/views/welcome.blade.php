@@ -11,15 +11,20 @@
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
+    <script src="https://kit.fontawesome.com/b41c177c53.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}"> -->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <meta name="description" content="Jerick Baetiong, Fullstack Developer">
+
+
 </head>
 
 <body>
-    <header>
+    <header class="border">
         <div class="logo">
             <!-- <img src="img/devjane.png" alt=""> -->
             <h3>&lt;JERICK-DEV&gt;</h3>
+
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
@@ -27,9 +32,9 @@
 
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                 <li class="nav__item"><a href="#services" class="nav__link">About me</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
             </ul>
         </nav>
     </header>
@@ -42,7 +47,7 @@
             <p>Hi, I'm </p>
             <strong>Jerick Baetiong</strong>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">Full Stack Developer from Caloocan City</p>
+        <p class="section__subtitle section__subtitle--intro">Full Stack Developer from Philippines</p>
     </section>
 
     <!-- End Introduction -->
@@ -52,20 +57,31 @@
         <h2 class="section__title section__title--services">What I do</h2>
         <div class="services">
             <div class="service">
-                <h3>UI/UX Design</h3>
-                <p>Design websites and web applications that is usable, easy to use while having a clean and presentable
+                <h3>
+                    <object data="{{asset('images/design.svg')}}" type="image/svg+xml" class="icon"></object> UI/UX
+                    Design
+                </h3>
+                <p>Design websites and web applications that is easy to use while having a clean and presentable
                     design.</p>
             </div><!-- / service -->
 
             <div class="service">
-                <h3>Develop</h3>
-                <p>Develop web application using the latest web technologies and writing clean and maintainable code.
+                <h3>
+                    <!-- <img src="{{asset('images/develop.png')}}" class="service__image" alt="">  -->
+                    <object data="{{asset('images/develop.svg')}}" type="image/svg+xml" class="icon"></object>
+                    Develop
+                </h3>
+                <p>Develop web applications using the latest web technologies and writing clean and maintainable code.
                 </p>
             </div><!-- / service -->
 
             <div class="service">
-                <h3>Deploy</h3>
-                <p>Deploy websites and web application and make it available to everyone using the latest deployment
+                <h3>
+                    <!-- <img src="{{asset('images/deploy.png')}}" class="service__image" alt="">  -->
+                    <object data="{{asset('images/deploy.svg')}}" type="image/svg+xml" class="icon"></object>
+                    Deploy
+                </h3>
+                <p>Deploy websites and web applications and make it available to everyone using the latest deployment
                     technologies.</p>
             </div><!-- / service -->
 
@@ -77,7 +93,7 @@
 
     <section class="about-me" id="about">
         <h2 class="section__title section__title--about">Who I am</h2>
-        <p class="section__subtitle section__subtitle--about">Full stack developer based out of Caloocan City
+        <p class="section__subtitle section__subtitle--about">Full stack developer based out of Metro Manila
             Philippines</p>
 
         <div class="about-me__body">
@@ -88,8 +104,8 @@
                 as a Full-stack Developer.
             </p>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quae vel qui aspernatur hic laborum,
-                fuga incidunt non debitis praesentium atque? Earum commodi fugit, facere nulla doloremque nihil a odit.
+                <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quae vel qui aspernatur hic laborum,
+                fuga incidunt non debitis praesentium atque? Earum commodi fugit, facere nulla doloremque nihil a odit. -->
             </p>
         </div> <!-- / About-->
     </section>
@@ -167,36 +183,67 @@
             </div>
             <div class="technology tooltip">
                 <span class="tooltiptext">
-                    Node JS
+                    MySQL
                 </span>
-                <img src="{{asset('images/node.png')}}" alt="webtech">
+                <img src="{{asset('images/mysql.png')}}" alt="webtech">
             </div>
         </div>
     </section>
 
     <section class="my-work" id="work">
-        <h2 class="section__title">My Work</h2>
-        <p class="section__subtitle"></p>
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work">Selection of my range of work</p>
 
         <div class="portfolio">
             <a href="#" class="portfolio__item">
-                <img src="portfolio-01.jpg" class="portfolio__img" alt="porfolio-01">
+                <img src="{{asset('images/github.png')}}" class="portfolio__img" alt="porfolio-01">
             </a>
         </div>
     </section>
 
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <a href="mailto:jerickbaetiong02@gmail.com" class="footer__link">jerickbaetiong02@gmail.com</a>
         <ul class="social-list">
             <!-- <li class="social-list__item"><a href="https://facebook.com/oneandonlyu" class="social-list__link">fb</a> -->
             </li>
-            <li class="social-list__item"><a href="https://twitter.com/jerickmb" class="social-list__link">twitter</a>
+            <li class="social-list__item"><a href="https://twitter.com/jerickmb" class="social-list__link"><i
+                        class="fab fa-twitter"></i></a>
             </li>
-            <li class="social-list__item"><a href="" class="social-list__link"></a></li>
+            <li class="social-list__item"><a href="https://github.com/jerickbaetiong" class="social-list__link"><i
+                        class="fab fa-github"></i></a></li>
+            <li class="social-list__item"><a href="https://gitlab.com/jerickbaetiong03" class="social-list__link">
+                    <i class="fab fa-gitlab"></i></a></li>
         </ul>
     </footer>
+
+
+    <!-- <script src="https://www.paypal.com/sdk/js?client-id=sb"></script>
+    <script>
+    paypal.Buttons().render('body');
+    </script> -->
+
+    <script>
+    const links = document.getElementsByClassName('nav__link')
+    for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function() {
+            let current = document.getElementsByClassName('active');
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active"
+            document.body.classList.remove('nav-open');
+        })
+    }
+
+
+
+    const navLinks = document.querySelectorAll('nav__link');
+
+    const navToggle = document.querySelector('.nav-toggle')
+    navToggle.addEventListener('click', () => {
+        document.body.classList.toggle('nav-open');
+    })
+    </script>
 </body>
 
 </html>
