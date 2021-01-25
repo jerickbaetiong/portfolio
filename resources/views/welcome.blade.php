@@ -58,7 +58,8 @@
         <div class="services">
             <div class="service">
                 <h3>
-                    <object data="{{asset('images/design.svg')}}" type="image/svg+xml" class="icon"></object> UI/UX
+                    <object data="{{secure_asset('images/design.svg')}}" type="image/svg+xml" class="icon"></object>
+                    UI/UX
                     Design
                 </h3>
                 <p>Design websites and web applications that is easy to use while having a clean and presentable
@@ -67,8 +68,8 @@
 
             <div class="service">
                 <h3>
-                    <!-- <img src="{{asset('images/develop.png')}}" class="service__image" alt="">  -->
-                    <object data="{{asset('images/develop.svg')}}" type="image/svg+xml" class="icon"></object>
+                    <!-- <img src="{{secure_asset('images/develop.png')}}" class="service__image" alt="">  -->
+                    <object data="{{secure_asset('images/develop.svg')}}" type="image/svg+xml" class="icon"></object>
                     Develop
                 </h3>
                 <p>Develop web applications using the latest web technologies and writing clean and maintainable code.
@@ -77,8 +78,8 @@
 
             <div class="service">
                 <h3>
-                    <!-- <img src="{{asset('images/deploy.png')}}" class="service__image" alt="">  -->
-                    <object data="{{asset('images/deploy.svg')}}" type="image/svg+xml" class="icon"></object>
+                    <!-- <img src="{{secure_asset('images/deploy.png')}}" class="service__image" alt="">  -->
+                    <object data="{{secure_asset('images/deploy.svg')}}" type="image/svg+xml" class="icon"></object>
                     Deploy
                 </h3>
                 <p>Deploy websites and web applications and make it available to everyone using the latest deployment
@@ -93,7 +94,7 @@
 
     <section class="about-me" id="about">
         <h2 class="section__title section__title--about">Who I am</h2>
-        <p class="section__subtitle section__subtitle--about">Full stack developer based out of Metro Manila
+        <p class="section__subtitle section__subtitle--about">Full stack developer based out of Metro Manila,
             Philippines</p>
 
         <div class="about-me__body">
