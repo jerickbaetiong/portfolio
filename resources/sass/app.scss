@@ -535,12 +535,25 @@ header.border {
 
 .portfolio__img {
     transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1),
-        opacity 250ms linear;
+        opacity 1000ms linear;
 }
 
-.portfolio__img:hover {
-    transform: scale(1.2);
-    opacity: 0.75;
+// .portfolio__img:hover {
+//     transform: rotateX(360deg);
+//     opacity: 0.75;
+// }
+
+.portfolio__img {
+    animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
 }
 
 // FOOTER

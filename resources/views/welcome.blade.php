@@ -12,18 +12,21 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b41c177c53.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
-    <!-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}"> -->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <meta name="description" content="Jerick Baetiong, Fullstack Developer">
 
 
 </head>
 
-<body>
+<body onscroll="animate">
     <header class="border">
         <div class="logo">
             <!-- <img src="img/devjane.png" alt=""> -->
-            <h3>&lt;JERICK-DEV&gt;</h3>
+            <h3>&lt;Full-Stack-Jerick&gt;</h3>
+            <!-- <h3>&lt;JERICK-DEV&gt;</h3> -->
 
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
@@ -55,10 +58,10 @@
     <!-- My Services -->
     <section class="my-services" id="services">
         <h2 class="section__title section__title--services">What I do</h2>
-        <div class="services">
+        <div class="services" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
             <div class="service">
                 <h3>
-                    <object data="{{secure_asset('images/design.svg')}}" width="50px" type="image/svg+xml"
+                    <object data="{{asset('images/design.svg')}}" width="50px" type="image/svg+xml"
                         class="icon"></object> UI/UX
                     Design
                 </h3>
@@ -69,18 +72,19 @@
             <div class="service">
                 <h3>
                     <!-- <img src="{{secure_asset('images/develop.png')}}" class="service__image" alt="">  -->
-                    <object data="{{secure_asset('images/develop.svg')}}" width="50px" type="image/svg+xml"
+                    <object data="{{asset('images/develop.svg')}}" width="50px" type="image/svg+xml"
                         class="icon"></object>
                     Develop
                 </h3>
-                <p>Develop web applications using the latest web technologies and writing clean and maintainable code.
+                <p>Develop websites and web applications using the latest web technologies and writing clean and
+                    maintainable code.
                 </p>
             </div><!-- / service -->
 
             <div class="service">
                 <h3>
                     <!-- <img src="{{secure_asset('images/deploy.png')}}" class="service__image" alt="">  -->
-                    <object data="{{secure_asset('images/deploy.svg')}}" width="50px" type="image/svg+xml"
+                    <object data="{{asset('images/deploy.svg')}}" width="50px" type="image/svg+xml"
                         class="icon"></object>
                     Deploy
                 </h3>
@@ -101,7 +105,7 @@
 
         <div class="about-me__body">
             <p>
-                I'm Jerick Baetiong. Full stack developer with 2+ years of hands-on experience in designing, developing
+                I'm Jerick Baetiong. Full stack developer with 2+ years of hands-on experience in designing, developing,
                 implementing, and deploying websites and web applications using a range of latest web technologies.
                 Seeking to leverage broad development experience and hands-on techinical expertise in a challenging role
                 as a Full-stack Developer.
@@ -226,7 +230,7 @@
     <script>
     paypal.Buttons().render('body');
     </script> -->
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
     const links = document.getElementsByClassName('nav__link')
     for (let i = 0; i < links.length; i++) {
@@ -246,6 +250,18 @@
     navToggle.addEventListener('click', () => {
         document.body.classList.toggle('nav-open');
     })
+
+    // const body = document.querySelector('body')
+    // body.addEventListener('scroll', () => {
+    //     // const elements = document.querySelector('.animate__animated');
+
+    //     // elements.forEach(element => {
+    //     //     console.log('element', element)
+    //     // });
+    //     alert('asdsd')
+    // })
+
+    AOS.init();
     </script>
 </body>
 
