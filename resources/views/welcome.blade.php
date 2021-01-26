@@ -14,8 +14,8 @@
     <script src="https://kit.fontawesome.com/b41c177c53.js" crossorigin="anonymous"></script>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}"> -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
+    <!-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> -->
     <meta name="description" content="Jerick Baetiong, Fullstack Developer">
 
 
@@ -61,7 +61,7 @@
         <div class="services" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
             <div class="service">
                 <h3>
-                    <object data="{{asset('images/design.svg')}}" width="50px" type="image/svg+xml"
+                    <object data="{{secure_asset('images/design.svg')}}" width="50px" type="image/svg+xml"
                         class="icon"></object> UI/UX
                     Design
                 </h3>
@@ -72,7 +72,7 @@
             <div class="service">
                 <h3>
                     <!-- <img src="{{secure_asset('images/develop.png')}}" class="service__image" alt="">  -->
-                    <object data="{{asset('images/develop.svg')}}" width="50px" type="image/svg+xml"
+                    <object data="{{secure_asset('images/develop.svg')}}" width="50px" type="image/svg+xml"
                         class="icon"></object>
                     Develop
                 </h3>
@@ -84,7 +84,7 @@
             <div class="service">
                 <h3>
                     <!-- <img src="{{secure_asset('images/deploy.png')}}" class="service__image" alt="">  -->
-                    <object data="{{asset('images/deploy.svg')}}" width="50px" type="image/svg+xml"
+                    <object data="{{secure_asset('images/deploy.svg')}}" width="50px" type="image/svg+xml"
                         class="icon"></object>
                     Deploy
                 </h3>
