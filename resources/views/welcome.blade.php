@@ -14,14 +14,14 @@
     <script src="https://kit.fontawesome.com/b41c177c53.js" crossorigin="anonymous"></script>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
     <!-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> -->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <meta name="description" content="Jerick Baetiong, Fullstack Developer">
 
 
 </head>
 
-<body onscroll="animate">
+<body>
     <header class="border">
         <div class="logo">
             <!-- <img src="img/devjane.png" alt=""> -->
@@ -61,7 +61,7 @@
         <div class="services" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
             <div class="service">
                 <h3>
-                    <object data="{{secure_asset('images/design.svg')}}" width="50px" type="image/svg+xml"
+                    <object data="{{asset('images/design.svg')}}" width="50px" type="image/svg+xml"
                         class="icon"></object> UI/UX
                     Design
                 </h3>
@@ -71,8 +71,8 @@
 
             <div class="service">
                 <h3>
-                    <!-- <img src="{{secure_asset('images/develop.png')}}" class="service__image" alt="">  -->
-                    <object data="{{secure_asset('images/develop.svg')}}" width="50px" type="image/svg+xml"
+                    <!-- <img src="{{asset('images/develop.png')}}" class="service__image" alt="">  -->
+                    <object data="{{asset('images/develop.svg')}}" width="50px" type="image/svg+xml"
                         class="icon"></object>
                     Develop
                 </h3>
@@ -83,8 +83,8 @@
 
             <div class="service">
                 <h3>
-                    <!-- <img src="{{secure_asset('images/deploy.png')}}" class="service__image" alt="">  -->
-                    <object data="{{secure_asset('images/deploy.svg')}}" width="50px" type="image/svg+xml"
+                    <!-- <img src="{{asset('images/deploy.png')}}" class="service__image" alt="">  -->
+                    <object data="{{asset('images/deploy.svg')}}" width="50px" type="image/svg+xml"
                         class="icon"></object>
                     Deploy
                 </h3>
@@ -202,16 +202,46 @@
         <p class="section__subtitle section__subtitle--work">Selection of my range of work</p>
 
         <div class="portfolio">
-            <a href="#" class="portfolio__item">
-                <img src="{{asset('images/github.png')}}" class="portfolio__img" alt="porfolio-01">
-            </a>
+            <div class="portfolio__item">
+                <a href="https://instagram-clone-9f10e.web.app">
+                    <img src="{{asset('images/ig-clone2.png')}}" class="portfolio__img" alt="porfolio-02">
+
+                </a>
+                <p>Instagram Clone</p>
+            </div>
+            <div class="portfolio__item">
+                <a href="https://chat-application-cb68c.web.app">
+                    <img src="{{asset('images/mern-chat.png')}}" class="portfolio__img" alt="porfolio-01">
+                </a>
+                <p>Chat Web Application</p>
+            </div>
+
+
         </div>
+        <!-- <div class="portfolio">
+            
+        </div> -->
+
+
+
     </section>
 
 
     <!-- Footer -->
     <footer class="footer">
-        <a href="mailto:jerickbaetiong02@gmail.com" class="footer__link">jerickbaetiong02@gmail.com</a>
+        <div>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:jerickbaetiong02@gmail.com" class="footer__link">jerickbaetiong02@gmail.com</a>
+        </div>
+        <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="">Metro Manila, Philippines</span>
+        </div>
+        <div>
+            <i class="fas fa-phone"></i>
+            <span class="">(+63) 9184372331</span>
+        </div>
+
         <ul class="social-list">
             <!-- <li class="social-list__item"><a href="https://facebook.com/oneandonlyu" class="social-list__link">fb</a> -->
             </li>
@@ -250,16 +280,6 @@
     navToggle.addEventListener('click', () => {
         document.body.classList.toggle('nav-open');
     })
-
-    // const body = document.querySelector('body')
-    // body.addEventListener('scroll', () => {
-    //     // const elements = document.querySelector('.animate__animated');
-
-    //     // elements.forEach(element => {
-    //     //     console.log('element', element)
-    //     // });
-    //     alert('asdsd')
-    // })
 
     AOS.init();
     </script>
