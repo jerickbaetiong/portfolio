@@ -14,8 +14,8 @@
     <script src="https://kit.fontawesome.com/b41c177c53.js" crossorigin="anonymous"></script>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <!-- <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}"> -->
+    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
     <meta name="description" content="Jerick Baetiong, Fullstack Developer">
 
 
@@ -61,7 +61,7 @@
         <div class="services" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
             <div class="service">
                 <h3>
-                    <object data="{{asset('images/design.svg')}}" width="50px" type="image/svg+xml"
+                    <object data="{{secure_asset('images/design.svg')}}" width="50px" type="image/svg+xml"
                         class="icon"></object> UI/UX
                     Design
                 </h3>
@@ -71,8 +71,8 @@
 
             <div class="service">
                 <h3>
-                    <!-- <img src="{{asset('images/develop.png')}}" class="service__image" alt="">  -->
-                    <object data="{{asset('images/develop.svg')}}" width="50px" type="image/svg+xml"
+                    <!-- <img src="{{secure_asset('images/develop.png')}}" class="service__image" alt="">  -->
+                    <object data="{{secure_asset('images/develop.svg')}}" width="50px" type="image/svg+xml"
                         class="icon"></object>
                     Develop
                 </h3>
@@ -83,8 +83,8 @@
 
             <div class="service">
                 <h3>
-                    <!-- <img src="{{asset('images/deploy.png')}}" class="service__image" alt="">  -->
-                    <object data="{{asset('images/deploy.svg')}}" width="50px" type="image/svg+xml"
+                    <!-- <img src="{{secure_asset('images/deploy.png')}}" class="service__image" alt="">  -->
+                    <object data="{{secure_asset('images/deploy.svg')}}" width="50px" type="image/svg+xml"
                         class="icon"></object>
                     Deploy
                 </h3>
@@ -126,73 +126,73 @@
                 <span class="tooltiptext">
                     HTML5
                 </span>
-                <img src="{{asset('images/html5.png')}}" alt="webtech">
+                <img src="{{secure_asset('images/html5.png')}}" alt="webtech">
             </div>
             <div class="technology tooltip">
                 <span class="tooltiptext">
                     CSS3
                 </span>
-                <img src="{{asset('images/css3.png')}}" alt="webtech">
+                <img src="{{secure_asset('images/css3.png')}}" alt="webtech">
             </div>
             <div class="technology tooltip">
                 <span class="tooltiptext">
                     Javascript
                 </span>
-                <img src="{{asset('images/javascript.png')}}" alt="webtech">
+                <img src="{{secure_asset('images/javascript.png')}}" alt="webtech">
             </div>
             <div class="technology tooltip">
                 <span class="tooltiptext">
                     Bootstrap
                 </span>
-                <img src="{{asset('images/bootstrap.png')}}" alt="webtech">
+                <img src="{{secure_asset('images/bootstrap.png')}}" alt="webtech">
             </div>
             <div class="technology tooltip">
                 <span class="tooltiptext">
                     Laravel
                 </span>
-                <img src="{{asset('images/laravel.png')}}" alt="webtech">
+                <img src="{{secure_asset('images/laravel.png')}}" alt="webtech">
             </div>
             <div class="technology tooltip">
                 <span class="tooltiptext">
                     JQuery
                 </span>
-                <img src="{{asset('images/jquery.png')}}" alt="webtech">
+                <img src="{{secure_asset('images/jquery.png')}}" alt="webtech">
             </div>
             <div class="technology tooltip">
                 <span class="tooltiptext">
                     Vue JS
                 </span>
-                <img src="{{asset('images/vue.png')}}" alt="webtech">
+                <img src="{{secure_asset('images/vue.png')}}" alt="webtech">
             </div>
             <div class="technology tooltip">
                 <span class="tooltiptext">
                     Vuetify
                 </span>
-                <img src="{{asset('images/vuetify.png')}}" alt="webtech">
+                <img src="{{secure_asset('images/vuetify.png')}}" alt="webtech">
             </div>
             <div class="technology tooltip">
                 <span class="tooltiptext">
                     Git
                 </span>
-                <img src="{{asset('images/git.png')}}" alt="webtech">
+                <img src="{{secure_asset('images/git.png')}}" alt="webtech">
             </div>
             <div class="technology tooltip">
                 <span class="tooltiptext">
                     Github
                 </span>
-                <img src="{{asset('images/github.png')}}" alt="webtech">
+                <img src="{{secure_asset('images/github.png')}}" alt="webtech">
             </div>
             <div class="technology tooltip">
                 <span class="tooltiptext">
                     Gitlab
                 </span>
-                <img src="{{asset('images/gitlab.png')}}" alt="webtech">
+                <img src="{{secure_asset('images/gitlab.png')}}" alt="webtech">
             </div>
             <div class="technology tooltip">
                 <span class="tooltiptext">
                     MySQL
                 </span>
-                <img src="{{asset('images/mysql.png')}}" alt="webtech">
+                <img src="{{secure_asset('images/mysql.png')}}" alt="webtech">
             </div>
         </div>
     </section>
@@ -204,14 +204,14 @@
         <div class="portfolio">
             <div class="portfolio__item">
                 <a href="https://instagram-clone-9f10e.web.app">
-                    <img src="{{asset('images/ig-clone2.png')}}" class="portfolio__img" alt="porfolio-02">
+                    <img src="{{secure_asset('images/ig-clone2.png')}}" class="portfolio__img" alt="porfolio-02">
 
                 </a>
                 <p>Instagram Clone</p>
             </div>
             <div class="portfolio__item">
                 <a href="https://chat-application-cb68c.web.app">
-                    <img src="{{asset('images/mern-chat.png')}}" class="portfolio__img" alt="porfolio-01">
+                    <img src="{{secure_asset('images/mern-chat.png')}}" class="portfolio__img" alt="porfolio-01">
                 </a>
                 <p>Chat Web Application</p>
             </div>
