@@ -544,6 +544,8 @@ header.border {
     color: var(--clr-blue);
     // height: 300px !important;
     padding: 0 20px;
+    width: fit-content;
+    margin: 0 auto;
 
     p {
         margin: 10px auto;

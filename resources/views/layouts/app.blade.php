@@ -14,8 +14,8 @@
     <script src="https://kit.fontawesome.com/b41c177c53.js" crossorigin="anonymous"></script>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    {{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> --}}
-    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    {{-- <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}"> --}}
     <meta name="description" content="Jerick Baetiong, Fullstack Developer">
 
 
