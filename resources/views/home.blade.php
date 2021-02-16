@@ -161,13 +161,13 @@
 
     <div class="portfolio">
         <div class="portfolio__item" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
-            <a href="https://instagram-clone-9f10e.web.app">
+            <a href="https://instagram-clone-9f10e.web.app" target="_blank">
                 <img src="{{asset('images/ig-clone2.png')}}" class="portfolio__img" alt="porfolio-02">
             </a>
             <p>Instagram Clone</p>
         </div>
         <div class="portfolio__item" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
-            <a href="https://chat-application-cb68c.web.app">
+            <a href="https://chat-application-cb68c.web.app" target="_blank">
                 <img src="{{asset('images/mern-chat1.png')}}" class="portfolio__img" alt="porfolio-01">
             </a>
             <p>Web Chat Application</p>
